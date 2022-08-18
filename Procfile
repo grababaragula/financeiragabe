@@ -1,1 +1,1 @@
-pweb: gunicorn financeira.wsgi --log-file--
+web: gunicorn financeira.wsgi --log-file -
