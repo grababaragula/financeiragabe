@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block titulo %}
+  Recursos
+{% endblock %}
+
+{% block conteudo %}
+    <section class="caixa"><!--/Início seção saiba -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-flex">
+            <div class="align-self-center">
+              <h2>Recursos</h2>
+              <p>
+                Com o Finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe de onde vem e para onde vai o seu dinheiro.
+              </p>
+              <head>
+              <body>
+              <table border= "4">
+                {% for dbs in db %}
+              <thead>
+                <tr>
+                  <th> <strong>id: </strong> </th>
+                  <th> <strong>nome: </strong> </th>
+                  <th> <strong>tipo: </strong> </th>
+              </tr>
+              </thead>
+                <tbody>
+                <tr>
+                <td> {{dbs.id}} </td>
+                <td> {{dbs.nome}} </td>
+                <td> {{dbs.proposta}} </td>
+                </tr>
+                </tbody>
+              {% endfor %}
+              </table>
+              </body>
+              </head>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção saiba -->
+
+{% endblock %}

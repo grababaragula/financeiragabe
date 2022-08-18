@@ -1,0 +1,1 @@
+pweb: gunicorn financeira.wsgi --log-file--
