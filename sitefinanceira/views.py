@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from sitefinanceira.models import Beneficios,Recursos,Precos
+from sitefinanceira.models import Beneficios,Recursos,Precos,Index
 
 def index(request):
     print(request)
@@ -38,3 +38,9 @@ def precos(request):
     data['db'] = Precos.objects.all()
 
     return render(request, 'precos.html',data)
+
+def index(request):
+    data = { }
+    data['db'] = Index.objects.all()
+
+    return render(request, 'index.html',data)

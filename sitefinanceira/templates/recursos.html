@@ -19,23 +19,20 @@
               <head>
               <body>
               <table border= "4">
-                {% for dbs in db %}
-              <thead>
                 <tr>
                   <th> <strong>id: </strong> </th>
                   <th> <strong>nome: </strong> </th>
                   <th> <strong>tipo: </strong> </th>
               </tr>
-              </thead>
-                <tbody>
+                {% for dbs in db %}
                 <tr>
                 <td> {{dbs.id}} </td>
                 <td> {{dbs.nome}} </td>
                 <td> {{dbs.proposta}} </td>
                 </tr>
-                </tbody>
               {% endfor %}
               </table>
+
               </body>
               </head>
             </div>

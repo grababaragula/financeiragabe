@@ -16,14 +16,22 @@
               <p>
                 Com o Finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe de onde vem e para onde vai o seu dinheiro.
               </p>
-              <a href="" class="btn btn-primary">Veja mais</a>
-            {% for dbs in db %}
-              <tr>
-                <strong>id:</strong> {{dbs.id}}<br>
-                <strong>nome: </strong> {{dbs.nome}}<br>
-                <strong>preco: </strong> {{dbs.preco}} <br>
+
+              <table border= "4">
+                <tr>
+                  <th> <strong>id: </strong> </th>
+                  <th> <strong>nome: </strong> </th>
+                  <th> <strong>porcentagens: </strong> </th>
               </tr>
+                {% for dbs in db %}
+                <tr>
+                <td> {{dbs.id}} </td>
+                <td> {{dbs.nome}} </td>
+                <td> {{dbs.preco}} </td>
+                </tr>
               {% endfor %}
+              </table>
+
             </div>
           </div>
         </div>

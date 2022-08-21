@@ -8,5 +8,7 @@ urlpatterns = [
     path('recursos/', views.recursos),
     path('beneficios/', views.beneficios),
     path('precos/', views.precos),
-    path('admin/',admin.site.urls),
+    path('index/', views.index),
+    path('admin/', admin.site.urls),
+
 ]
