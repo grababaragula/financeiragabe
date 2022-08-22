@@ -1,3 +1,3 @@
 function abrir(){
-    alert('Funcionou.')
+    alert('Email cadastrado com sucesso.')
 }
